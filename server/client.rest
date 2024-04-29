@@ -1,0 +1,28 @@
+### GET ALL BOOKS
+GET http://localhost:4400/api/books
+
+### CREATE A BOOK
+POST http://localhost:4400/api/books
+Content-Type: application/json
+
+{
+  "title": "Brott & Straff",
+  "author": "6628fde3b299e97747cb8774",
+  "isbn": "E84328J32343",
+  "publishDate": "1999-10-11T11:13:04.123Z"
+}
+
+
+### GET ALL AUTHORS
+GET http://localhost:4400/api/authors
+
+### CREATE A AUTHOR
+POST http://localhost:4400/api/authors
+Content-Type: application/json
+
+{
+ "name": "Korven Hejjegård",
+ "yearOfBirth": 2000
+}
+
+
