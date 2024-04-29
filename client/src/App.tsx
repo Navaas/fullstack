@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import BookForm from "./BookForm";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -17,15 +18,9 @@ function App() {
   }, []);
 
   return (
-    <>
-      <ul>
-        {isLoading ? (
-          <li>Loading...</li>
-        ) : (
-          books.map((book) => <li>{book.title}</li>)
-        )}
-      </ul>
-    </>
+    <div>
+      <BookForm />
+    </div>
   );
 }
 
